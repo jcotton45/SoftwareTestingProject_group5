@@ -49,7 +49,7 @@ public class BankAccountManager {
             return Status.ACCOUNT_NOT_FOUND;
         }
         System.out.println("Account " + accountNumber + " withdrawn " + amount + " from " + balance);
-        if (balance <= amount) {
+        if (balance == amount) {
             System.out.println("Error: Insufficient funds");
             return Status.INSUFFICIENT_FUNDS;
         }
